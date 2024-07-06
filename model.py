@@ -11,7 +11,7 @@ feat_cols = ['clonesize', 'bumbles', 'andrena', 'osmia', 'MaxOfUpperTRange', 'Ra
              'seeds']
 
 X_test_rf_df = pd.read_csv(curr_path + "/X_test_rf_df.csv", index_col="0")
-rf_final = joblib.load(curr_path + "/randomforest_blueberry_pollination_tuned_model.joblib")
+rf_final = joblib.load(curr_path + "/y_test.joblib")
 
 
 def predict_yield(attributes: np.ndarray):
