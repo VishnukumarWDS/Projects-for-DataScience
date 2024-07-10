@@ -10,8 +10,8 @@ curr_path = os.path.dirname(os.path.realpath(__file__))
 feat_cols = ['clonesize', 'bumbles', 'andrena', 'osmia', 'MaxOfUpperTRange', 'RainingDays', 'fruitset', 'fruitmass',
              'seeds']
 
-X_test_rf_df = pd.read_csv(curr_path + "/X_test_rf_df.csv", index_col="0")
-rf_final = joblib.load(curr_path + "/y_test.joblib")
+X_test_rf_df = pd.read_csv(curr_path + "/X_test_rf_df (2).csv", index_col="0")
+rf_final = joblib.load(curr_path + "/randomforest_blueberry_pollination_tuned_model.joblib")
 
 
 def predict_yield(attributes: np.ndarray):
